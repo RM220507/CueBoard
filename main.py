@@ -12,6 +12,11 @@ pygame.init()
 PROJECT_PATH = pathlib.Path(__file__).parent
 PROJECT_UI = PROJECT_PATH / "main_ui.ui"
 
+#! TO DO
+# Clock
+# Loading shows
+# Cue slider
+
 class CueBoard:
     def __init__(self, master=None):
         self.__builder = builder = pygubu.Builder()
