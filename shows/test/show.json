@@ -1,0 +1,6 @@
+[
+    ["1.mp3", "PRE-SHOW", 2, true, 5.0, true],
+    ["2.mp3", "SCENE 1 OPEN", 3, false, 1.0, true],
+    ["3.mp3", "END SHOW", 4, false, 0.0, false],
+    ["4.mp3", "EXIT", 1, false, 0.0, false]
+]
