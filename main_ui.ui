@@ -173,6 +173,30 @@
                     </child>
                   </object>
                 </child>
+                <child>
+                  <object class="customtkinter.CTkLabel" id="clock_label" named="True">
+                    <property name="font">{Arial} 48 {}</property>
+                    <property name="text" translatable="yes">00:00:00.0</property>
+                    <layout manager="pack">
+                      <property name="fill">x</property>
+                      <property name="padx">5</property>
+                      <property name="pady">5</property>
+                      <property name="side">top</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="customtkinter.CTkButton" id="load_show_btn" named="True">
+                    <property name="command" type="command" cbtype="simple">load_show_prompt</property>
+                    <property name="text" translatable="yes">Load Show</property>
+                    <layout manager="pack">
+                      <property name="fill">x</property>
+                      <property name="padx">5</property>
+                      <property name="pady">5</property>
+                      <property name="side">top</property>
+                    </layout>
+                  </object>
+                </child>
               </object>
             </child>
           </object>
