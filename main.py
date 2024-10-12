@@ -33,7 +33,11 @@ class CueBoard:
         self.__mainwindow.bind("i", lambda e: self.update_volume(self.__volume + 10))
         self.__mainwindow.bind("k", lambda e: self.update_volume(self.__volume - 10))
         
+        self.__cue_list = []
+        self.__sounds = []
         self.__playing_sounds = []
+        self.__cue_lookup = []
+        
         self.__volume = 100
         
         # create cue view 
@@ -49,8 +53,6 @@ class CueBoard:
         self.__cue_view.grid(row=0, column=1, sticky="nsew", padx=5, pady=5)
         
         self.__builder.get_object("cue_select_slider").configure(from_=1, to=1, number_of_steps=0)
-        
-        self.load_show("shows/omtg/") # load a show
         
         self.play_loop() # begin play loop
         
